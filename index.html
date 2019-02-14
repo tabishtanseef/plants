@@ -5,8 +5,10 @@
 <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">  
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 <style>
 #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12, #div13, #div14  {
   width: 130px;
@@ -95,34 +97,23 @@ display:none;
 }
 </style>
 <script>
+$('#drag1').draggable();
+$('#drag2').draggable();
+$('#drag3').draggable();
+$('#drag4').draggable();
+$('#drag5').draggable();
+$('#drag6').draggable();
+$('#drag7').draggable();
+$('#drag8').draggable();
+$('#drag9').draggable();
+$('#drag10').draggable();
+$('#drag11').draggable();
+$('#drag12').draggable();
+$('#drag13').draggable();
+$('#drag14').draggable();
 var count=0;
 
-function touchHandler(event) {
-    var touch = event.changedTouches[0];
 
-    var simulatedEvent = document.createEvent("MouseEvent");
-        simulatedEvent.initMouseEvent({
-        touchstart: "mousedown",
-        touchmove: "mousemove",
-        touchend: "mouseup"
-    }[event.type], true, true, window, 1,
-        touch.screenX, touch.screenY,
-        touch.clientX, touch.clientY, false,
-        false, false, false, 0, null);
-
-    touch.target.dispatchEvent(simulatedEvent);
-    event.preventDefault();
-}
-
-function init() {
-    document.addEventListener("touchstart", touchHandler, true);
-    document.addEventListener("touchmove", touchHandler, true);
-    document.addEventListener("touchend", touchHandler, true);
-    document.addEventListener("touchcancel", touchHandler, true);
-}
-window.onload = function() {
-    init();
-}
 function allowDrop(ev) {
   ev.preventDefault();
 }
