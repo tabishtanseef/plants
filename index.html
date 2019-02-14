@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Happy Faces A</title>
+<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+#div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12, #div13, #div14  {
+  width: 130px;
+  height: 50px; 
+  border: 2px solid #000;
+}
+
+#yups{
+background-color:#ffffff8f;
+text-align:center;
+padding:10px;
+border:2px solid #8e5100;
+padding:10px;
+ --box-shadow-color: #583505;
+    box-shadow: 5px 5px 5px var(--box-shadow-color);
+}
+.tab1{
+width:95%;
+padding:20px;
+}
+.row{
+margin-bottom:20px;
+}
+#bro{
+background:orange;
+font-size:20px;
+padding:30px;
+border:3px solid;
+padding-top:20px;
+}
+.sn{
+text-align:left;
+}
+body{
+background-color:#8e5100;
+font-size:22px;
+font-weight:bold;
+}
+.kro{
+background:white;
+border:3px solid;
+padding:60px;
+}
+h4{background-color:#ffffff8f;
+text-align:center;
+font-family:Nexa;
+font-size:30px;
+padding:10px;
+}
+.ans{
+margin-top:10px;
+background:white;
+width:70%;
+height:50px;
+padding:7px;
+}
+h2, h3 {
+background-color:orange;
+color:white;
+text-shadow:2px 2px #000;
+text-align:center;
+font-size:40px;
+padding:10px;
+font-family:'Hammersmith One', sans-serif;
+}
+.button {
+    position: relative;
+    background-color: #f4511e;
+    border: none;
+	margin-top: 10px;
+	margin-left: 25px;
+    font-size: 25px;
+	font-family:CAC Moose, cursive;
+    color: #FFFFFF;
+    padding: 1px;
+    width: 80%;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.hidden{
+display:none;
+}
+</style>
+<script>
+var count=0;
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+function drop1(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  console.log(data);
+  if(data=='drag1'){
+  count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
+function drop2(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  if(data=='drag2'){
+  count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
+function drop3(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  console.log(data);
+  if(data=='drag3'){
+  count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
+function drop4(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  if(data=='drag4'){
+  count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
+function drop5(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  console.log(data);
+  if(data=='drag5'){
+  count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
+function drop6(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  if(data=='drag6'){
+  count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
+function drop7(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  console.log(data);
+  if(data=='drag7'){
+  count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
+function drop8(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  if(data=='drag8'){
+  count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
+function drop9(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  console.log(data);
+  if(data=='drag9'){
+  count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
+function drop10(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  if(data=='drag10'){
+  count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
+function drop11(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  console.log(data);
+  if(data=='drag11'){
+  count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
+function drop12(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  if(data=='drag12'){
+  count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
+function drop13(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  console.log(data);
+  if(data=='drag13'){
+  count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
+function drop14(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  if(data=='drag14'){
+  count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
+function go(){
+if(count>=4){
+ var audio = document.getElementById("audio1");
+       audio.play();
+setInterval(function(){ 
+
+$('.tab1').addClass('hidden')
+$('h3').addClass('hidden')
+	   $('.tab').removeClass('hidden')},1000);
+}
+else{
+ var audio = document.getElementById("audio2");
+       audio.play();
+}
+}
+</script>
+</head>
+<body>
+<h3>BASIC ENGLISH GRAMMAR</h3>
+<h3>Drag the correct words to complete the word pairs.</h3>
+
+<div class="container-fluid tab1">
+
+<div class="row" id="yups">
+	<div class="col-sm-9 kro" >
+		<div class="row">
+			<div class="col-sm-1">1.</div>
+			<div class="col-sm-2 sn">bride and</div>
+			<div class="col-sm-2"> <div id="div1" ondrop="drop1(event)" ondragover="allowDrop(event)"></div></div>
+			<div class="col-sm-1"></div>
+			<div class="col-sm-1">8.</div>
+			<div class="col-sm-2 sn">cream and</div>
+			<div class="col-sm-2 "> <div  id="div8" ondrop="drop8(event)" ondragover="allowDrop(event)"></div></div>
+			<br>
+			<br>
+		</div>
+		<div class="row">
+			<div class="col-sm-1">2.</div>
+			<div class="col-sm-2 sn">pots and</div>
+			<div class="col-sm-2"> <div id="div2" ondrop="drop2(event)" ondragover="allowDrop(event)"></div></div>
+			<div class="col-sm-1"></div>
+			<div class="col-sm-1">9.</div>
+			<div class="col-sm-2 sn">Stars and</div>
+			<div class="col-sm-2"> <div  id="div9" ondrop="drop9(event)" ondragover="allowDrop(event)"></div></div>
+			<br>
+			<br>
+			
+		</div>
+		<div class="row">
+			<div class="col-sm-1">3.</div>
+			<div class="col-sm-2 sn">man and</div>
+			<div class="col-sm-2"> <div id="div3" ondrop="drop3(event)" ondragover="allowDrop(event)"></div></div>
+			<div class="col-sm-1"></div>
+			<div class="col-sm-1">10.</div>
+			<div class="col-sm-2 sn">give and</div>
+			<div class="col-sm-2"> <div  id="div10" ondrop="drop10(event)" ondragover="allowDrop(event)"></div></div>
+			<br>
+			<br>
+			
+		</div>
+		<div class="row">
+			<div class="col-sm-1">4.</div>
+			<div class="col-sm-2 sn">prim and</div>
+			<div class="col-sm-2"> <div id="div4" ondrop="drop4(event)" ondragover="allowDrop(event)"></div></div>
+			<div class="col-sm-1"></div>
+			<div class="col-sm-1">11.</div>
+			<div class="col-sm-2 sn">hammer and</div>
+			<div class="col-sm-2"> <div  id="div11" ondrop="drop11(event)" ondragover="allowDrop(event)"></div></div>
+			<br>
+			<br>
+			
+		</div>
+		<div class="row">
+			<div class="col-sm-1">5.</div>
+			<div class="col-sm-2 sn">profit and</div>
+			<div class="col-sm-2"> <div id="div5" ondrop="drop5(event)" ondragover="allowDrop(event)"></div></div>
+			<div class="col-sm-1"></div>
+			<div class="col-sm-1">12.</div>
+			<div class="col-sm-2 sn">sweet and</div>
+			<div class="col-sm-2"> <div  id="div12" ondrop="drop12(event)" ondragover="allowDrop(event)"></div></div>
+			<br>
+			<br>
+			
+		</div>
+		<div class="row">
+			<div class="col-sm-1">6.</div>
+			<div class="col-sm-2 sn">black and</div>
+			<div class="col-sm-2"> <div id="div6" ondrop="drop6(event)" ondragover="allowDrop(event)"></div></div>
+			<div class="col-sm-1"></div>
+			<div class="col-sm-1">13.</div>
+			<div class="col-sm-2 sn">tall and</div>
+			<div class="col-sm-2"> <div  id="div13" ondrop="drop13(event)" ondragover="allowDrop(event)"></div></div>
+			<br>
+			<br>
+			
+		</div>
+		<div class="row">
+			<div class="col-sm-1">7.</div>
+			<div class="col-sm-2 sn">coffee and</div>
+			<div class="col-sm-2"> <div id="div7" ondrop="drop7(event)" ondragover="allowDrop(event)"></div></div>
+			<div class="col-sm-1"></div>
+			<div class="col-sm-1">14.</div>
+			<div class="col-sm-2 sn">Jack and</div>
+			<div class="col-sm-2"> <div  id="div14" ondrop="drop14(event)" ondragover="allowDrop(event)"></div></div>
+			<br>
+			<br>
+			
+		</div>
+		<div class="row"  >
+			<div class="col-sm-12"></div>
+			<div class="col-sm-4">
+			<button class="button"   onclick="window.location.reload()"><span>Reset </span></button>
+			</div>
+			<div class="col-sm-4">
+			
+			</div>
+			<div class="col-sm-4">
+			<button class="button" onClick="go()"><span>Submit </span></button>
+			</div>
+
+			
+		</div>
+	</div>
+	<div class="col-sm-1" ></div>
+	<div class="col-sm-2" id="bro">
+		<div class="row">
+			
+			<div class="col-sm-12 ans">
+			<span id="drag2" class="" draggable="true" ondragstart="drag(event)" >pans</span>
+			</div>
+			<div class="col-sm-12 ans">
+			<span id="drag3" class="" draggable="true" ondragstart="drag(event)" >woman</span>
+			</div>
+			<div class="col-sm-12 ans">
+			<span id="drag1" class="" draggable="true" ondragstart="drag(event)" >groom</span>
+			</div>
+			<div class="col-sm-12 ans">
+			<span id="drag4" class="" draggable="true" ondragstart="drag(event)" >proper</span>
+			</div>
+			<div class="col-sm-12 ans">
+			<span id="drag5" class="" draggable="true" ondragstart="drag(event)" >loss</span>
+			</div>
+			<div class="col-sm-12 ans">
+			<span id="drag8" class="" draggable="true" ondragstart="drag(event)" >sugar</span>
+			</div>
+			<div class="col-sm-12 ans">
+			<span id="drag10" class="" draggable="true" ondragstart="drag(event)" >take</span>
+			</div>
+			<div class="col-sm-12 ans">
+			<span id="drag9" class="" draggable="true" ondragstart="drag(event)" >Stripes</span>
+			</div>
+			<div class="col-sm-12 ans">
+			<span id="drag11" class="" draggable="true" ondragstart="drag(event)" >nail</span>
+			</div>
+			<div class="col-sm-12 ans">
+			<span id="drag13" class="" draggable="true" ondragstart="drag(event)" >thin</span>
+			</div>
+			<div class="col-sm-12 ans">
+			<span id="drag7" class="" draggable="true" ondragstart="drag(event)" >doughnuts</span>
+			</div>
+			<div class="col-sm-12 ans">
+			<span id="drag14" class="" draggable="true" ondragstart="drag(event)" >Jill</span>
+			</div>
+			<div class="col-sm-12 ans">
+			<span id="drag12" class="" draggable="true" ondragstart="drag(event)" >sour</span>
+			</div>
+			<div class="col-sm-12 ans">
+			<span id="drag6" class="" draggable="true" ondragstart="drag(event)" >white</span>
+			</div>
+			<div class="col-sm-12"></div>
+		</div>
+	</div>
+</div>
+	<br>
+	<br>
+</div>
+
+<div class="tab hidden">
+	<img src="items/Welldone.gif" width="90%" height="auto">
+</div>
+</div>
+<audio src="audio/try-again.mp3" id="audio2"></audio>
+<audio src="audio/well-done.mp3" id="audio1"></audio>
+
+</body>
+</html>
